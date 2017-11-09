@@ -1,0 +1,17 @@
+data/src/main/java/br/jus/trt10/trt10util/DataUtil.java.i
+data/src/main/java/br/com/wcs80/util/NumeroUtil.java.i
+data/src/main/java/br/com/wcs80/util/StringUtil.java.i
+data/src/main/java/br/jus/trt10/trt10util/CriptografiaUtil.java.i
+data/src/main/java/br/jus/trt10/trt10util/LoggerToFile.java.i
+data/src/main/java/br/com/wcs80/util/CPF_CNPJ_Util.java.i
+data/src/main/java/br/jus/trt10/trt10util/NumeroUtil.java.i
+data/pom.xml.i
+data/src/main/java/br/com/wcs80/util/DataUtil.java.i
+data/.hgignore.i
+data/src/main/java/br/jus/trt10/trt10util/CPF_CNPJ_Util.java.i
+data/src/main/java/br/com/wcs80/util/CurrencyWriter.java.i
+data/src/main/java/br/jus/trt10/trt10util/CurrencyWriter.java.i
+data/src/main/java/br/jus/trt10/trt10util/StringUtil.java.i
+data/src/main/java/br/com/wcs80/util/LoggerToFile.java.i
+data/src/main/java/br/com/wcs80/util/CriptografiaUtil.java.i
+data/nb-configuration.xml.i
