@@ -5,13 +5,15 @@
  */
 package br.com.wcs80.util;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import org.jboss.resteasy.util.Hex;
+import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.io.IOUtils;
 
 /**
  *
@@ -31,29 +33,8 @@ public class CriptografiaUtil {
       md.update(vl.getBytes());
       return stringHexa(md.digest());
    }
-
-   /**
-    * String digest = getDigest(new FileInputStream(file));
-    * 
-    * @param is
-    * @return
-    * @throws NoSuchAlgorithmException
-    * @throws IOException
-    */
-	public static String getMD5H(InputStream in) throws NoSuchAlgorithmException, IOException {
-		MessageDigest md = MessageDigest.getInstance("MD5");
-		md.reset();
-		
-		byte[] bytes = new byte[2048];
-		int numBytes;
-		while ((numBytes = in.read(bytes)) != -1) {
-			md.update(bytes, 0, numBytes);
-		}
-		byte[] digest = md.digest();
-		String result = new String(Hex.encodeHex(digest));
-		return result;
-	}   
    
+
    /**
     * Criptografa o valor passado com parametro
     * utilizando o algoritimo MD5. E retorna uma
